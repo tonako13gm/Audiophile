@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Header from "./components/header";
+import Footer from "./components/footer";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { Manrope } from 'next/font/google'
+
+ 
+// If loading a variable font, you don't need to specify the font weight
+const manrope = Manrope({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={manrope.className}
       >
-        {children}
+        <div className="mx-auto">
+          <Header/>
+          {children}
+          <Footer/>
+        </div>
       </body>
     </html>
   );

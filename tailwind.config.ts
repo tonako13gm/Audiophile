@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        lightColor: "var(--lightColor)",
+        darkColor: "var(--darkColor)",
+        primaryDark: "var(--primaryDark)",
+        primaryLight: "var(--primaryLight)",
+        seondaryDark: "var(--seondaryDark)",
+        secondaryLight: "var(--secondaryLight)"
       },
     },
   },
