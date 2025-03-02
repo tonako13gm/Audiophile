@@ -9,13 +9,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightColor: "var(--lightColor)",
-        darkColor: "var(--darkColor)",
-        primaryDark: "var(--primaryDark)",
-        primaryLight: "var(--primaryLight)",
-        seondaryDark: "var(--seondaryDark)",
-        secondaryLight: "var(--secondaryLight)"
+        lightColor: 'var(--color-lightColor)',
+        darkColor: 'var(--color-darkColor)',
+        primaryDark: 'var(--color-primaryDark)',
+        primaryLight: 'var(--color-primaryLight)',
+        seondaryDark: 'var(--color-seondaryDark)',
+        secondaryLight: 'var(--color-secondaryLight)',
       },
+      fontSize: {
+        body: 'var(--text-body)',
+        h1: 'var(--text-h1)',
+        h2: 'var(--text-h2)',
+        h3: 'var(--text-h3)',
+        overLine: 'var(--text-overLine)',
+        subTitle: 'var(--text-subTitle)',
+      },
+      letterSpacing: {
+        overLine: 'var(--tracking-overLine)',
+      }
     },
   },
   plugins: [],
