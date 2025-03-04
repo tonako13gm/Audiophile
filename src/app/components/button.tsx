@@ -5,9 +5,10 @@ interface variantProps {
 }
 
 export default function Button({variant, children}: variantProps) {
-    const main:string = "font-bold py-3 px-5 text-subTitle uppercase text-lightColor bg-primaryDark"
-    const dark:string = "font-bold py-3 px-5 text-subTitle uppercase text-lightColor bg-darkColor"
-    const light:string = "font-bold py-3 px-5 text-subTitle uppercase bg-transparent border-2 border-darkColor text-darkColor"
+    // const main:string = "font-bold py-3 px-5 text-subTitle uppercase text-lightColor bg-primaryDark"
+    const main:string = "text-lightColor bg-primaryDark"
+    const dark:string = "text-lightColor bg-darkColor"
+    const light:string = "text-darkColor bg-transparent border-2 border-darkColor"
 
 
         function variantSetter(props:string) {
@@ -23,7 +24,7 @@ export default function Button({variant, children}: variantProps) {
         }
 
     return (
-        <button type="button" className={variantSetter(variant)}>
+        <button type="button" className={`font-bold py-3 px-5 text-subTitle uppercase ${variantSetter(variant)}`}>
         {/* <button type="button" className="font-bold py-3 px-5 text-subTitle uppercase text-lightColor bg-primaryDark"> */}
             {children}
         </button>

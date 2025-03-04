@@ -40,7 +40,7 @@ function NewProducts () {
         </div>
 
         <div>
-          <Button variant="light">See Products</Button>
+          <Button variant="main">See Products</Button>
 
           {/* <style>{`
             .btn {
