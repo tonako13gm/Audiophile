@@ -19,19 +19,19 @@ export default function Footer() {
                         />
                     </div>
 
-                    <nav className="flex flex-col md:flex-row pb-10 h-52 md:h-0 justify-evenly items-center md:w-2/3 md:justify-between lg:w-1/2">
+                    <nav className="flex flex-col md:flex-row pb-10 h-52 md:h-0 justify-evenly items-center md:w-2/3 md:justify-between lg:w-1/2 text-subTitle">
                         <Navlinks/>
                     </nav>
                 </div>
 
                 <div className="opacity-50 pb-20">
-                    <h1 className="text-center md:text-start">
+                    <h1 className="text-body text-center md:text-start">
                         Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.
                     </h1>
                 </div>
 
                 <div className="md:flex md:w-full">
-                    <div className="opacity-50 pb-10 md:w-1/2">
+                    <div className="opacity-50 pb-10 md:w-1/2 font-bold">
                         <h1>
                             Copyright 2021. All Rights Reserved
                         </h1>

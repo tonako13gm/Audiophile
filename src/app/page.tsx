@@ -1,3 +1,5 @@
+'use client'
+
 import Image, { StaticImageData } from "next/image";
 
 import headPhonePNG from "../../public/image/shared/desktop/image-category-thumbnail-headphones.png"
@@ -6,7 +8,14 @@ import earPhonePNG from "../../public/image/shared/desktop/image-category-thumbn
 
 import earPhoneBG from "../../public/image/home/desktop/image-hero.jpg"
 
+import Button from "./components/button";
+
+
+
 function NewProducts () {
+
+
+
   return (
     <div className="w-full h-[70vh] bg-[#191919] bg-contain bg-no-repeat bg-center text-lightColor content-center
       bg-[url(../../public/image/home/mobile/image-header.jpg)]
@@ -31,9 +40,21 @@ function NewProducts () {
         </div>
 
         <div>
-          <button>see products</button>
-        </div>
+          <Button variant="light">See Products</Button>
 
+          {/* <style>{`
+            .btn {
+              font-bold py-2 px-4 rounded;
+            }
+            .btn-blue {
+              @apply bg-blue-500 text-white;
+            }
+            .btn-blue:hover {
+              @apply bg-blue-700;
+            }
+          `}</style> */}
+
+        </div>
       </div>
     </div>
   )
@@ -56,8 +77,8 @@ function Products({ icon, item }: ProductsProps) {
         />
       </div>
       <div className="pt-24 justify-items-center">
-        <h1 className="pb-2">{item}</h1>
-        <p>shop</p>
+        <p className="pb-2 text-body font-bold">{item}</p>
+        <p className="text-subTitle">shop</p>
       </div>
     </div>
   );
