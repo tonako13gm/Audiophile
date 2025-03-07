@@ -1,6 +1,9 @@
 import Navlinks from "./navLinks";
 import Image from 'next/image';
 import logoIcon from '../../../public/image/shared/desktop/logo.svg'
+import facebookIcon from '../../../public/image/shared/desktop/icon-facebook.svg'
+import twitterIcon from '../../../public/image/shared/desktop/icon-twitter.svg'
+import instagramIcon from '../../../public/image/shared/desktop/icon-instagram.svg'
 
 
 export default function Footer() {
@@ -37,10 +40,24 @@ export default function Footer() {
                         </h1>
                     </div>
 
-                    <div className="justify-self-center md:w-1/2 pb-10 md:flex md:justify-end">
-                        <span>icon</span>
-                        <span>icon</span>
-                        <span>icon</span>
+                    <div className="justify-items-center md:w-1/2 md:justify-items-end">
+                        <div className="flex pb-10 w-1/2 justify-around">
+                            <Image
+                                src={facebookIcon}
+                                alt="Facebook"
+                                className='max-w-5 max-h-5'
+                            />
+                            <Image
+                                src={twitterIcon}
+                                alt="Twitter"
+                                className='max-w-5 max-h-5'
+                            />
+                            <Image
+                                src={instagramIcon}
+                                alt="Instagram"
+                                className='max-w-5 max-h-5'
+                            />
+                        </div>
                     </div>
                 </div>
 

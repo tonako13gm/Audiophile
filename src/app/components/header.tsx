@@ -17,7 +17,6 @@ export default function Header() {
                 {/* Brand Logo */}
                 <div className='w-4/6 ... md:w-10/12 ... lg:w-3/12 ... justify-items-center md:justify-items-start'>
                     <Image
-                        priority
                         src={logoIcon}
                         alt="Audiophile"
                         className='max-w-36 max-h-6'
@@ -34,7 +33,6 @@ export default function Header() {
                 {/* Cart Icon */}
                 <div className='w-1/6 ... md:w-1/12 ... lg:w-3/12 justify-items-end'>
                     <Image
-                        priority
                         src={cartIcon}
                         alt="Add to cart"
                         className='max-w-5 max-h-5'
