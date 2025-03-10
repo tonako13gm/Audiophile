@@ -7,37 +7,37 @@ import arrowICon from "../../../public/image/shared/desktop/icon-arrow-right.svg
 
 interface ProductsProps {
     icon: StaticImageData;
-    item: String;
+    item: string;
   }
-  
+
 function ProductItems ({ icon, item }: ProductsProps) {
     return (
         <div className="w-full md:w-4/12 md:mx-2 h-44 bg-secondaryLight justify-items-center rounded-md mb-20 group">
-        <div className="relative">
-            <Image
-                src={icon}
-                alt="Headphones"
-                className="max-w-40 absolute -translate-x-1/2 -translate-y-1/3 group-hover:max-w-48"
-            />
-        </div>
-        <div className="pt-24 justify-items-center">
-            <p className="pb-2 text-body font-bold">{item}</p>
-            <div className="flex space-x-4 items-center">
-                <p className="text-subTitle group-hover:text-primaryDark">shop</p>
+            <div className="relative">
                 <Image
-                    src={arrowICon}
-                    alt="Click here"
-                    className='max-w-5 max-h-3'
+                    src={icon}
+                    alt={item}
+                    className="max-w-40 absolute -translate-x-1/2 -translate-y-1/3 group-hover:max-w-48"
                 />
             </div>
-        </div>
+            <div className="pt-24 justify-items-center">
+                <p className="pb-2 text-body font-bold">{item}</p>
+                <div className="flex space-x-4 items-center">
+                    <p className="text-subTitle group-hover:text-primaryDark">shop</p>
+                    <Image
+                        src={arrowICon}
+                        alt="Click here"
+                        className='max-w-5 max-h-3'
+                    />
+                </div>
+            </div>
         </div>
     )
 }
 
 export default function Products () {
     return (
-        <>
+        <div className="justify-items-center w-10/12 md:flex justify-self-center md:justify-between pt-32">
             <ProductItems
                 icon={headPhonePNG}
                 item="Headphones"
@@ -50,6 +50,6 @@ export default function Products () {
                 icon={earPhonePNG}
                 item="Earphones"
             />
-        </>
+        </div>
     )
 }

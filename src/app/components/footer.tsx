@@ -41,7 +41,7 @@ export default function Footer() {
                     </div>
 
                     <div className="justify-items-center md:w-1/2 md:justify-items-end">
-                        <div className="flex pb-10 w-1/2 justify-around">
+                        <div className="flex pb-20 w-1/2 justify-around">
                             <Image
                                 src={facebookIcon}
                                 alt="Facebook"

@@ -1,13 +1,13 @@
 export default function SubFooter () {
     return (
-        <div className="w-10/12 justify-self-center pb-32 pt-24 lg:flex lg:flex-row-reverse">
-        <div className="rounded-md py-40 lg:py-60 mb-7 lg:mb-0 lg:w-6/12 lg:ml-4
-            bg-[url(../../public/image/shared/mobile/image-best-gear.jpg)]
-            md:bg-[url(../../public/image/shared/tablet/image-best-gear.jpg)]
-            lg:bg-[url(../../public/image/shared/desktop/image-best-gear.jpg)]
-            bg-cover
-            bg-no-repeat
-        ">
+        <div className="w-10/12 justify-self-center pb-20 pt-20 lg:flex lg:flex-row-reverse">
+        <div className="rounded-md mb-7 lg:mb-0 lg:w-6/12 lg:ml-4">
+        <picture>
+              <source media="(min-width: 1024px)" srcSet="/image/shared/desktop/image-best-gear.jpg" />
+              <source media="(min-width: 768px)" srcSet="/image/shared/tablet/image-best-gear.jpg" />
+              <source media="(min-width: 300px)" srcSet="/image/shared/mobile/image-best-gear.jpg" />
+              <img className="w-full h-auto" />
+            </picture>
         </div>
         <div className="text-center lg:text-left lg:w-6/12 lg:mr-4 lg:content-center lg:pr-16">
             <div className="text-h3 text-darkColor font-bold pb-5">
