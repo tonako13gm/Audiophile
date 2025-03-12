@@ -10,7 +10,6 @@ export default function Button({variant, children}: variantProps) {
     const dark:string = "text-lightColor bg-darkColor hover:bg-lightColor hover:text-darkColor"
     const light:string = "text-darkColor bg-transparent border-2 border-darkColor hover:bg-darkColor hover:text-lightColor"
 
-
         function variantSetter(props:string) {
             if (props == "main") {
                 return main;
