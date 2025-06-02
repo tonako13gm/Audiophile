@@ -1,4 +1,5 @@
 import Button from "./button"
+import Link from "next/link"
 
 export default function FeaturedTwo () {
     return (
@@ -13,10 +14,12 @@ export default function FeaturedTwo () {
             ">
                 <div className="w-10/12 justify-self-center py-28">
                     <div className="text-h3 text-darkColor font-bold pb-5">
-                    <h3>ZX7 SPEAKER</h3>
+                        <h3>ZX7 SPEAKER</h3>
                     </div>
                     <div>
-                    <Button variant="light">See Products</Button>
+                        <Link href="/products/speakers/details/zx7-speaker">
+                            <Button variant="light">See Products</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

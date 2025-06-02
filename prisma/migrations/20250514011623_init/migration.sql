@@ -1,0 +1,6 @@
+-- CreateTable
+CREATE TABLE "Product" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "item" TEXT NOT NULL,
+    "qty" INTEGER NOT NULL
+);

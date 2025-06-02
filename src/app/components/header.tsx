@@ -1,10 +1,17 @@
-import Image from 'next/image';
+import Image from 'next/image'
 import logoIcon from '../../../public/image/shared/desktop/logo.svg'
-import cartIcon from '../../../public/image/shared/desktop/icon-cart.svg'
 import HamburgerMenu from './hamburgerMenu';
+import Link from 'next/link'
 import Navlinks from './navLinks';
+import { pathname } from '../utils/usePathname';
+
+
+import CartIcon from './svg/cart';
+
 
 export default function Header() {
+    // const isActive = pathname.endsWith('/cart')
+    // const newClassName = `${isActive ? "text-primaryDark" : ""}`
     return (
         <header className="bg-darkColor justify-items-center ... text-lightColor">
             <div className='flex justify-between ... items-center ... w-10/12 min-h-24'>
@@ -16,11 +23,13 @@ export default function Header() {
 
                 {/* Brand Logo */}
                 <div className='w-4/6 ... md:w-10/12 ... lg:w-3/12 ... justify-items-center md:justify-items-start'>
-                    <Image
-                        src={logoIcon}
-                        alt="Audiophile"
-                        className='max-w-36 max-h-6'
-                    />
+                    <Link href="/">
+                        <Image
+                            src={logoIcon}
+                            alt="Audiophile"
+                            className='max-w-36 max-h-6'
+                        />
+                    </Link>
                 </div>
 
                 {/* Desktop Menu Links */}
@@ -31,14 +40,12 @@ export default function Header() {
                 </div>
 
                 {/* Cart Icon */}
-                <div className='w-1/6 ... md:w-1/12 ... lg:w-3/12 justify-items-end'>
-                    <Image
-                        src={cartIcon}
-                        alt="Add to cart"
-                        className='max-w-5 max-h-5'
-                    />
+                <div className='w-1/6 ... md:w-1/12 ... lg:w-3/12 justify-items-end text-primaryDark'>
+                    <Link href='/cart'>
+                        <CartIcon className={`${pathname === '/cart' ? 'hidden' : 'fill-lightColor hover:fill-primaryDark'}`} />
+                    </Link>
                 </div>
             </div>
         </header>
-    );
+    )
   }

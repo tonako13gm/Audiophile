@@ -1,4 +1,5 @@
 import Button from "./button"
+import Link from "next/link"
 
 export default function FeaturedThree () {
     return (
@@ -9,7 +10,7 @@ export default function FeaturedThree () {
               <source media="(min-width: 1024px)" srcSet="/image/home/desktop/image-earphones-yx1.jpg" />
               <source media="(min-width: 768px)" srcSet="/image/home/tablet/image-earphones-yx1.jpg" />
               <source media="(min-width: 300px)" srcSet="/image/home/mobile/image-earphones-yx1.jpg" />
-              <img className="w-full h-auto" />
+              <img className="w-full h-auto"alt=""/>
             </picture>
           </div>
           <div className="md:w-6/12 rounded-md bg-seondaryDark pl-14 md:ml-4 py-10 content-center">
@@ -17,7 +18,9 @@ export default function FeaturedThree () {
               <h3>YX1 EARPHONES</h3>
             </div>
             <div>
-              <Button variant="light">See Products</Button>
+              <Link href="/products/earphones/details/yx1-earphones">
+                <Button variant="light">See Products</Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -27,5 +27,6 @@ export default function Button({variant, children}: variantProps) {
         {/* <button type="button" className="font-bold py-3 px-5 text-subTitle uppercase text-lightColor bg-primaryDark"> */}
             {children}
         </button>
+
     )
 }

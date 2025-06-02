@@ -1,6 +1,7 @@
 import Button from "./button";
 import Image from "next/image";
 import zx9Speaker from "../../../public/image/home/desktop/image-speaker-zx9.png"
+import Link from "next/link";
 
 export default function FeaturedOne () {
   return (
@@ -34,7 +35,9 @@ export default function FeaturedOne () {
               </p>
             </div>
             <div className="justify-self-center lg:justify-self-start">
-              <Button variant="dark">See Products</Button>
+              <Link href="/products/speakers/details/zx9-speaker">
+                <Button variant="dark">See Products</Button>
+              </Link>
             </div>
           </div>
 

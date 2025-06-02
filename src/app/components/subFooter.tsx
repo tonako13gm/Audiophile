@@ -6,7 +6,7 @@ export default function SubFooter () {
               <source media="(min-width: 1024px)" srcSet="/image/shared/desktop/image-best-gear.jpg" />
               <source media="(min-width: 768px)" srcSet="/image/shared/tablet/image-best-gear.jpg" />
               <source media="(min-width: 300px)" srcSet="/image/shared/mobile/image-best-gear.jpg" />
-              <img className="w-full h-auto" />
+              <img className="w-full h-auto" alt="Best gear"/>
             </picture>
         </div>
         <div className="text-center lg:text-left lg:w-6/12 lg:mr-4 lg:content-center lg:pr-16">

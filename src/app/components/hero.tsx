@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./button";
 
 export default function Hero () {
@@ -27,7 +28,11 @@ export default function Hero () {
         </div>
 
         <div>
-          <Button variant="main">See Products</Button>
+          <Link href="/products/headphones/details/xx99-mark-two-headphones">
+            <Button variant="main">
+              See Products
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
