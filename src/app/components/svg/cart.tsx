@@ -1,5 +1,3 @@
-// import { twMerge } from 'tailwind-merge';
-
 interface CheckboxProps {
   className?: string;
 }
@@ -7,8 +5,6 @@ interface CheckboxProps {
 const CartIcon = ({ className }: CheckboxProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        // width="23" height="20"
-        // className={twMerge('w-20 h-20', className)}
         className={className}
     >
         <path

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef, useState, useActionState } from "react"
+import React, { useRef, useState } from "react"
 import { createProduct } from "./action"
 import { useFormStatus } from "react-dom";
 // import { Submit } from "@/app/components/submit";
