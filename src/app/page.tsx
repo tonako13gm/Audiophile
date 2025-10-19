@@ -1,5 +1,5 @@
 import Hero from "./components/hero"
-// import Products from "./components/products";
+import Products from "./components/products";
 // import FeaturedOne from "./components/featuredOne";
 // import FeaturedTwo from "./components/featuredTwo";
 // import FeaturedThree from "./components/featuredThree";
@@ -19,7 +19,7 @@ export default function Home() {
         <Hero/>
       </section>
       <section>
-        {/* <Products/> */}
+        <Products/>
       </section>
       <section>
         {/* <FeaturedOne/> */}
