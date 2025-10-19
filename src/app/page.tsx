@@ -4,7 +4,7 @@ import FeaturedOne from "./components/featuredOne";
 import FeaturedTwo from "./components/FeaturedTwo";
 import FeaturedThree from "./components/FeaturedThree";
 import type { Metadata } from "next";
-// import SubFooter from "./components/subFooter";
+import SubFooter from "./components/subFooter";
 
 export const metadata: Metadata = {
   title: "Audiophone",
@@ -31,7 +31,7 @@ export default function Home() {
         <FeaturedThree/>
       </section>
       <section>
-        {/* <SubFooter/> */}
+        <SubFooter/>
       </section>
     </main>
   );
