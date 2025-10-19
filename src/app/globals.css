@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-lightColor: #ffffff;
+  --color-darkColor: #101010;
+  --color-primaryDark: #D87D4A;
+  --color-primaryLight: #fbaf85;
+  --color-seondaryDark: #f1f1f169;
+  --color-secondaryLight: #FAFAFA;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --text-body: 0.938rem;
+  --text-body--line-height: 1.563rem;
+  --text-body--font-weight: 500;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --text-h1: 3.5rem;
+  --text-h1--line-height: 3.625rem;
+  --text-h1--letter-spacing: 0.125rem;
+  --text-h1--font-weight: 700;
+
+  --text-h2: 2.5rem;
+  --text-h2--line-height: 2.75rem;
+  --text-h2--letter-spacing: 0.094rem;
+  --text-h2--font-weight: 700;
+
+  --text-h3: 1.75rem;
+  --text-h3--line-height: 2.25rem;
+  --text-h3--letter-spacing: 0.072rem;
+  --text-h3--font-weight: 700;
+
+  --text-overline: 0.875rem;
+  --text-overLine--line-height: 1.5rem;
+  --text-overline--letter-spacing: 0.625rem;
+  --text-overline--font-weight: 400;
+
+  --text-subTitle: 0.875rem;
+  --text-subTitle--line-height: 2.063rem;
+  --text-subTitle--letter-spacing: 0.063rem;
+  --text-subTitle--font-weight: 700;
+
+  --tracking-overLine: 0.625rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* color: var(--darkColor);
+  background: var(--lightColor); */
+  font-size: var(--text-body);;
+  padding: 0;
+  margin: 0;
 }
