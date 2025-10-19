@@ -1,4 +1,4 @@
-import Hero from "./components/hero"
+import Hero from "./components/hero";
 import Products from "./components/products";
 import FeaturedOne from "./components/featuredOne";
 import FeaturedTwo from "./components/FeaturedTwo";

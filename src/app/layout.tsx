@@ -8,18 +8,18 @@ import { Manrope } from 'next/font/google'
 const manrope = Manrope({ subsets: ['latin'] })
 
 export default function RootLayout({
-  children
-  // cartModal
+  children,
+  cartModal
 }: Readonly<{
   children: React.ReactNode
-  // cartModal: React.ReactNode
+  cartModal: React.ReactNode
 }>) {
   return (
     <html lang="en">
       <body
         className={manrope.className}
       >
-        {/* {cartModal} */}
+        {cartModal}
         <div className="mx-auto">
             <Header/>
             {children}
