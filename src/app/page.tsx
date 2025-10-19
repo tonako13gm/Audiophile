@@ -1,6 +1,6 @@
 import Hero from "./components/hero"
 import Products from "./components/products";
-// import FeaturedOne from "./components/featuredOne";
+import FeaturedOne from "./components/featuredOne";
 // import FeaturedTwo from "./components/featuredTwo";
 // import FeaturedThree from "./components/featuredThree";
 import type { Metadata } from "next";
@@ -22,7 +22,7 @@ export default function Home() {
         <Products/>
       </section>
       <section>
-        {/* <FeaturedOne/> */}
+        <FeaturedOne/>
       </section>
       <section>
         {/* <FeaturedTwo/> */}
