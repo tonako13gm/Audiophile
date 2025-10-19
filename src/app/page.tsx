@@ -1,8 +1,8 @@
 import Hero from "./components/hero"
 import Products from "./components/products";
 import FeaturedOne from "./components/featuredOne";
-// import FeaturedTwo from "./components/featuredTwo";
-// import FeaturedThree from "./components/featuredThree";
+import FeaturedTwo from "./components/FeaturedTwo";
+import FeaturedThree from "./components/FeaturedThree";
 import type { Metadata } from "next";
 // import SubFooter from "./components/subFooter";
 
@@ -25,10 +25,10 @@ export default function Home() {
         <FeaturedOne/>
       </section>
       <section>
-        {/* <FeaturedTwo/> */}
+        <FeaturedTwo/>
       </section>
       <section>
-        {/* <FeaturedThree/> */}
+        <FeaturedThree/>
       </section>
       <section>
         {/* <SubFooter/> */}
