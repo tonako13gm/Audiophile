@@ -10,8 +10,7 @@ export default function ModalCart() {
   return (
     <Modal style={style}>
       <div className="p-6 h-full flex flex-col">
-        {/* <CartCheckOut/> */}
-        <h1>THIS IS A CART</h1>
+        <CartCheckOut/>
       </div>
     </Modal>
   )
