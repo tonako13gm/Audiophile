@@ -8,6 +8,9 @@ import HamburgerMenu from './hamburgerMenu';
 import { pathname } from '../../components/utils/usePathname';
 
 export default function Header() {
+
+    const style = 'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:w-10/12 md:w-8/12 lg:w-2/5 max-h-[90vh] overflow-hidden bg-lightColor rounded-lg shadow-xl overflow-y-auto'
+
     return (
         <header className="bg-darkColor justify-items-center text-lightColor">
             <div className='flex justify-between items-center w-10/12 min-h-24'>
@@ -38,7 +41,6 @@ export default function Header() {
                 {/* Cart Icon */}
                 <div className='cart w-1/6 md:w-1/12 lg:w-3/12 text-primaryDark'>
                     <Link href='/cart' className='flex justify-end'>
-                        {/* <CartIcon className={`${pathname === '/cart' ? 'hidden' : 'fill-lightColor hover:fill-primaryDark'}`} /> */}
                         <ShoppingCart  color="white" size={30}
                             className={`${pathname === '/cart' ? 'hidden' : 'fill-lightColor hover:fill-primaryDark'}`}
                         />
